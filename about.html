@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 클럽 룩북 — 정보</title>
+    <meta name="description" content="가양 클럽 룩북 정보 페이지. 클럽 입장팁, 드레스코드, 지역 핫플까지 진짜 브로가 알려주는 가양 클럽 가이드. 연락처: 010-6279-0862">
+    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 정보, 클럽 입장 팁, 가양 클럽 드레스코드, 가양 클럽 가이드">
+    <link rel="canonical" href="https://t3b05-gy-club-look.vercel.app/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="가양 클럽 룩북 — 정보">
+    <meta property="og:description" content="가양 클럽 룩북 정보 페이지. 진짜 브로가 알려주는 가양 클럽 가이드.">
+    <meta property="og:url" content="https://t3b05-gy-club-look.vercel.app/info">
+    <meta property="og:type" content="website">
+    <style>
+        /* ---- RESET & BASE ---- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial Black', 'Impact', sans-serif; background: #f5e849; color: #0a0a0a; line-height: 1.3; }
+        a { color: #0a0a0a; text-decoration: none; border-bottom: 3px solid #0a0a0a; }
+        a:hover { background: #0a0a0a; color: #f5e849; }
+        img { max-width: 100%; display: block; }
+
+        /* ---- UTILITY ---- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
+
+        /* ---- TYPOGRAPHY ---- */
+        h1 { font-size: 4rem; text-transform: uppercase; letter-spacing: -3px; line-height: 0.9; margin-bottom: 0.5rem; }
+        h2 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 1rem; border-top: 5px solid #0a0a0a; padding-top: 1rem; }
+        h3 { font-size: 1.8rem; text-transform: uppercase; letter-spacing: -1px; margin-bottom: 0.5rem; }
+        p, li { font-size: 1.2rem; margin-bottom: 1rem; }
+        .text-accent { background: #0a0a0a; color: #f5e849; padding: 0.2rem 0.5rem; display: inline-block; }
+        .text-secondary { opacity: 0.7; font-size: 0.9rem; }
+
+        /* ---- BORDERS / TEXTURE ---- */
+        .card { border: 5px solid #0a0a0a; padding: 1.5rem; margin-bottom: 2rem; background: #fff; box-shadow: 8px 8px 0 #0a0a0a; }
+        .card:hover { box-shadow: 12px 12px 0 #0a0a0a; transform: translate(-2px, -2px); }
+
+        /* ---- NAV ---- */
+        nav { border-bottom: 5px solid #0a0a0a; padding: 1rem 0; margin-bottom: 2rem; }
+        nav ul { list-style: none; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+        nav a { font-size: 1.5rem; text-transform: uppercase; padding: 0.3rem 0.8rem; border: 3px solid #0a0a0a; background: #f5e849; display: inline-block; }
+        nav a:hover { background: #0a0a0a; color: #f5e849; }
+        nav a.active { background: #0a0a0a; color: #f5e849; }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            nav ul { flex-direction: column; align-items: center; gap: 1rem; }
+            .card { padding: 1rem; }
+        }
+
+        /* ---- EXTRA ---- */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        .faq-item { border-bottom: 3px solid #0a0a0a; padding: 1rem 0; }
+        .faq-item strong { display: block; font-size: 1.4rem; margin-bottom: 0.3rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 내비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/lookbook">룩북</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/contact">연락처</a></li>
+            </ul>
+        </nav>
+
+        <!-- 히어로 -->
+        <section style="margin-bottom: 3rem;">
+            <h1>가양 클럽<br>진짜 정보</h1>
+            <p class="text-accent" style="font-size: 1.5rem; margin-top: 1rem;">브로가 다 알려줌 ㅋㅋ</p>
+            <p style="font-size: 1.4rem;">가양에서 클럽 간다고? 여기 정보 없으면 10만원 날리는 거임. 내가 경험으로 써내려간 진짜 팁만 모았다.</p>
+        </section>
+
+        <!-- 카드: 지역 시그널 -->
+        <div class="card">
+            <h2>📍 가양 어디?</h2>
+            <p>가양역 1번 출구 나와서 NC백화점 쪽으로 걸으면 바로 형광등 터지는 거리 보임. 거기가 가양 클럽 씬의 중심이야. 홈플러스 지하 주차장에 차 대고 걸어가면 주차 걱정 없음. 근데 토요일 밤 10시 이후엔 주차장 꽉 차니까 지하철 타고 오는 게 멘탈에 좋다.</p>
+            <p>내 첫 방문 때 혼자 와서 뻘쭘했는데, 지금은 단골 됐어. 진짜 <strong>가양 클럽 룩북</strong> 찍는 사람들 많으니까 처음엔 구경만 해도 재밌음.</p>
+        </div>
+
+        <!-- 2단 카드 -->
+        <div class="grid-2">
+            <div class="card">
+                <h3>⏰ 입장 시간 & 팁</h3>
+                <p>금요일/토요일은 오후 10시 오픈인데, 진짜 사람 몰리는 시간은 12시 이후야. 입장료는 보통 2~3만원인데 게스트 리스트에 이름 올리면 반값. 내 전화번호 010-6279-0862로 문자 주면 내가 보증 서줌. 조건: <strong>가양 클럽 룩북</strong> 인스타에 태그 하나만 해줘 ㅎㅎ</p>
+            </div>
+            <div class="card">
+                <h3>💃 룩북 포인트</h3>
+                <p>가양 클럽에서 제일 많이 보이는 스타일: 베스트 조끼 + 와이드 팬츠 + 크록스. 아니면 올검에 체인 하나. 나는 개인적으로 데님 셋업에 빨간 운동화 추천함. 플리츠 가방? 그건 좀 아니고... <strong>스트릿 감성</strong> 원하면 신발부터 신경 써. 사진 잘 나오는 조명은 입구 오른쪽 기둥 밑이야.</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <section style="margin-bottom: 3rem;">
+            <h2>❓ 브로들이 묻는다</h2>
+            <div class="faq-item">
+                <strong>Q: 첫 클럽인데 뭐 입어야 함?</strong>
+                <p>A: 일단 너무 쫙 빼입지 마. 깔끔한 티에 와이드 청바지, 깔끔한 운동화. 신발은 무조건 깨끗하게. 거기서 신발 빼면 밉상 됨. 그리고 <strong>가양 클럽 룩북</strong> 검색해서 최근 사진 보면 분위기 딱 옴.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: 혼자 가도 되나?</strong>
+                <p>A: 나도 처음엔 혼자 갔다. 사람들 생각보다 친절하고, 바텐더한테 "첨인데 뭐 마셔요" 하면 잘 알려줌. 단, 너무 술 먹지는 말고 분위기 즐겨. 셀카 한 장 찍어서 인스타에 #가양클럽룩북 해두면 나중에 추억 됨.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: 드레스코드 진짜 있음?</strong>
+                <p>A: 있음. 슬리퍼, 반바지, 모자? 가끔 입장 막힐 수 있어. 깔끔한 스니커즈, 긴 바지, 티셔츠 or 셔츠. 너무 과한 건 별로. 그리고 레드립? 여자들 사이에서 인기 많더라.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: 주차 어디에?</strong>
+                <p>A: 홈플러스 가양점 지하 주차장 (유료). 아니면 가양역 공영주차장. 난 보통 친구랑 카카오택시 타고 감. 음주운전 절대 ㄴㄴ.</p>
+            </div>
+        </section>
+
+        <!-- 추가 정보 카드 -->
+        <div class="card" style="margin-bottom: 3rem;">
+            <h2>📸 가양 클럽 룩북 시즌2 준비중</h2>
+            <p>내가 직접 찍은 촌티 안 나는 클럽 사진들, 룩북 페이지에 올릴 예정. 구독하고 알림 받아. 최신 스타일, 인기 포즈, 조명 팁까지 다 담을 거임. <strong>가양 클럽</strong>에서 제일 핫한 사진사 브로가 만든다 ㅋㅋ</p>
+            <p>문의나 협업은 위 내비게이션 '연락처'로. 인스타 DM도 가능 (아이디: gy_look_bro). 기다려라, 곧 터진다.</p>
+        </div>
+
+        <!-- 푸터처럼 -->
+        <div style="border-top: 5px solid #0a0a0a; padding: 2rem 0; text-align: center;">
+            <p class="text-secondary">© 가양 클럽 룩북 2025 | 진짜 정보는 여기, 가짜는 저리가</p>
+        </div>
+    </div>
+</body>
+</html>
