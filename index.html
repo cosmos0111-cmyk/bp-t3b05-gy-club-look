@@ -1,739 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 클럽 룩북 — 홈</title>
-    <meta name="description" content="가양 클럽 룩북, 여기 다 모였다! 거친 스트리트 감성의 클럽 룩북, 찐 리뷰, 핫한 스타일. 지금 확인하고 클럽 가기 전에 갓생 준비? ㅋㅋ. 연락처: 010-6279-0862">
-    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 스타일, 클럽 룩북, 스트리트 패션, 클럽 의상, 가양 클럽 패션">
-    <link rel="canonical" href="https://gayang-club-tip.program-school.online/">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="가양 클럽 룩북 — 홈">
-    <meta property="og:description" content="가양 클럽 룩북, 여기 다 모였다! 거친 스트리트 감성의 클럽 룩북, 찐 리뷰, 핫한 스타일. 지금 확인하고 클럽 가기 전에 갓생 준비? ㅋㅋ">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gayang-club-tip.program-school.online/">
-    <meta property="og:image" content="https://t3b05-gy-club-look.vercel.app/og-image.jpg">
-    <meta property="og:locale" content="ko_KR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="가양 클럽 룩북 — 홈">
-    <meta name="twitter:description" content="가양 클럽 룩북, 여기 다 모였다! 거친 스트리트 감성의 클럽 룩북, 찐 리뷰, 핫한 스타일">
-    <meta name="twitter:image" content="https://t3b05-gy-club-look.vercel.app/og-image.jpg">
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "가양 클럽 룩북",
-  "description": "가양 지역 클럽 스타일 & 패션 룩북 커뮤니티",
-  "telephone": "+82-10-6279-0862",
-  "url": "https://gayang-club-tip.program-school.online/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "가양",
-    "addressRegion": "서울",
-    "addressCountry": "KR"
-  },
-  "areaServed": "가양",
-  "priceRange": "₩₩"
-}</script>
-
-    <style>
-        /* ---- RESET & BASE ---- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #111111;
-            color: #ffffff;
-            font-family: 'Courier New', Courier, 'Impact', monospace;
-            line-height: 1.3;
-            max-width: 100%;
-            overflow-x: hidden;
-            padding: 0;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: underline;
-            text-decoration-thickness: 3px;
-            text-underline-offset: 4px;
-        }
-        a:hover {
-            color: #00ff41;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* ---- UTILITY ---- */
-        .container {
-            padding: 24px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-        }
-
-        /* ---- TYPOGRAPHY ---- */
-        h1 {
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            line-height: 0.9;
-            color: #ffff00;
-            text-shadow: 4px 4px 0 #00ff41;
-            transform: rotate(-2deg);
-            margin-bottom: 16px;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #ffff00;
-            border-left: 6px solid #00ff41;
-            padding-left: 16px;
-            margin-bottom: 24px;
-            transform: skewX(-5deg);
-        }
-
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        p, li {
-            font-size: 1.1rem;
-            margin-bottom: 16px;
-        }
-
-        .text-accent {
-            color: #00ff41;
-        }
-
-        .text-secondary {
-            color: #ffff00;
-        }
-
-        /* ---- BORDERS / TEXTURE ---- */
-        .brutal-border {
-            border: 4px solid #ffff00;
-            padding: 24px;
-            background-color: #1a1a1a;
-            position: relative;
-        }
-
-        .brutal-border::after {
-            content: '';
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 8px,
-                rgba(255, 255, 0, 0.05) 8px,
-                rgba(255, 255, 0, 0.05) 16px
-            );
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .brutal-border > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ---- HEADER & NAV ---- */
-        header {
-            background-color: #000000;
-            border-bottom: 4px solid #ffff00;
-            padding: 16px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #ffff00;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            transform: rotate(-1deg);
-        }
-
-        .logo span {
-            color: #00ff41;
-            font-size: 1.2rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-
-        nav a {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: 3px solid transparent;
-            padding: 4px 8px;
-            transition: 0.15s;
-        }
-
-        nav a:hover {
-            border-color: #00ff41;
-            color: #00ff41;
-            transform: scale(1.05) rotate(-1deg);
-        }
-
-        .hamburger {
-            display: none;
-            background: none;
-            border: 3px solid #ffff00;
-            color: #ffff00;
-            font-size: 2rem;
-            padding: 4px 12px;
-            cursor: pointer;
-            font-family: inherit;
-            font-weight: bold;
-        }
-
-        .hamburger:hover {
-            background-color: #ffff00;
-            color: #111111;
-        }
-
-        /* ---- MOBILE NAV ---- */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: #000000;
-                border-bottom: 4px solid #00ff41;
-                padding: 24px;
-                gap: 16px;
-                z-index: 99;
-            }
-
-            nav.active {
-                display: flex;
-            }
-
-            nav a {
-                font-size: 1.4rem;
-                border-bottom: 2px solid #ffff00;
-                width: 100%;
-                padding: 8px 0;
-            }
-
-            h1 {
-                transform: rotate(-1deg);
-            }
-        }
-
-        /* ---- HERO ---- */
-        .hero {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 40px 24px;
-            margin-bottom: 40px;
-            position: relative;
-            background: 
-                linear-gradient(135deg, #00ff41 0%, #111111 30%, #111111 70%, #ffff00 100%);
-            border-bottom: 6px solid #ffff00;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 20px,
-                rgba(255, 255, 255, 0.03) 20px,
-                rgba(255, 255, 255, 0.03) 21px
-            );
-            pointer-events: none;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            margin-bottom: 16px;
-            transform: rotate(-3deg);
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ffffff;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 16px 24px;
-            border-left: 6px solid #00ff41;
-            display: inline-block;
-            transform: skewX(-4deg);
-        }
-
-        .hero .cta {
-            display: inline-block;
-            margin-top: 24px;
-            background-color: #ffff00;
-            color: #111111;
-            font-weight: 900;
-            font-size: 1.4rem;
-            padding: 16px 40px;
-            border: 4px solid #111111;
-            text-decoration: none;
-            text-transform: uppercase;
-            transform: rotate(1deg);
-            transition: 0.2s;
-        }
-
-        .hero .cta:hover {
-            background-color: #00ff41;
-            color: #000000;
-            transform: rotate(-2deg) scale(1.03);
-        }
-
-        /* ---- SECTIONS ---- */
-        section {
-            padding: 40px 24px;
-            margin-bottom: 0;
-        }
-
-        .section-gap {
-            margin-bottom: 40px;
-        }
-
-        .asymmetric-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .asymmetric-grid.reverse {
-            grid-template-columns: 1fr 2fr;
-        }
-
-        @media (max-width: 768px) {
-            .asymmetric-grid,
-            .asymmetric-grid.reverse {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-
-        @media (max-width: 768px) {
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* ---- REVIEW CARDS ---- */
-        .review-card {
-            border: 4px solid #00ff41;
-            padding: 24px;
-            background-color: #1a1a1a;
-            transform: rotate(0.5deg);
-            position: relative;
-        }
-
-        .review-card:nth-child(odd) {
-            transform: rotate(-1deg);
-            border-color: #ffff00;
-        }
-
-        .review-card .stars {
-            color: #ffff00;
-            font-size: 1.4rem;
-            letter-spacing: 4px;
-            margin-bottom: 8px;
-        }
-
-        .review-card .meta {
-            font-size: 0.9rem;
-            color: #888;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            display: flex;
-            gap: 16px;
-        }
-
-        .review-card .meta strong {
-            color: #ffffff;
-        }
-
-        .review-card blockquote {
-            font-style: normal;
-            font-weight: 400;
-            border-left: 4px solid #00ff41;
-            padding-left: 16px;
-        }
-
-        .review-card .nickname {
-            font-weight: 900;
-            color: #ffff00;
-            font-size: 1.2rem;
-        }
-
-        /* ---- LOOKBOOK PLACEHOLDER ---- */
-        .lookbook-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin: 24px 0;
-        }
-
-        .lookbook-item {
-            aspect-ratio: 3 / 4;
-            background: linear-gradient(145deg, #222222, #333333);
-            border: 4px solid #ffff00;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: #ffff00;
-            font-weight: 900;
-            text-transform: uppercase;
-            transform: rotate(var(--rot, 0deg));
-            transition: 0.2s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .lookbook-item::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(0, 255, 65, 0.1) 10px,
-                rgba(0, 255, 65, 0.1) 20px
-            );
-        }
-
-        .lookbook-item:nth-child(1) { --rot: 1deg; }
-        .lookbook-item:nth-child(2) { --rot: -2deg; }
-        .lookbook-item:nth-child(3) { --rot: 3deg; }
-        .lookbook-item:nth-child(4) { --rot: -1deg; }
-        .lookbook-item:nth-child(5) { --rot: 2deg; }
-        .lookbook-item:nth-child(6) { --rot: -3deg; }
-
-        .lookbook-item:hover {
-            border-color: #00ff41;
-            transform: scale(1.02) rotate(0deg);
-        }
-
-        @media (max-width: 768px) {
-            .lookbook-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        /* ---- FOOTER ---- */
-        footer {
-            background-color: #000000;
-            border-top: 6px solid #ffff00;
-            padding: 40px 24px 24px;
-            margin-top: 40px;
-        }
-
-        .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 24px;
-        }
-
-        .footer-inner .col {
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .footer-inner h4 {
-            color: #00ff41;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            border-bottom: 3px solid #ffff00;
-            padding-bottom: 4px;
-        }
-
-        .footer-inner a {
-            color: #ffffff;
-        }
-
-        .footer-inner a:hover {
-            color: #00ff41;
-        }
-
-        .copyright {
-            margin-top: 32px;
-            border-top: 2px solid #333;
-            padding-top: 16px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        /* ---- RESPONSIVE FIXES ---- */
-        @media (max-width: 768px) {
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .hero .cta {
-                font-size: 1.1rem;
-                padding: 12px 24px;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-            }
-        }
-
-        /* ---- MISC ---- */
-        .phone-link {
-            font-size: 1.3rem;
-            font-weight: 900;
-            color: #ffff00;
-            background-color: #111111;
-            border: 4px solid #00ff41;
-            padding: 8px 16px;
-            display: inline-block;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        .phone-link:hover {
-            background-color: #00ff41;
-            color: #111111;
-        }
-
-        .skew-box {
-            transform: skewX(-3deg);
-            border: 4px solid #ffff00;
-            padding: 24px;
-            background-color: #1a1a1a;
-            margin-bottom: 24px;
-        }
-
-        .skew-box > * {
-            transform: skewX(3deg);
-        }
-
-        .texture-bg {
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 12px,
-                rgba(255, 255, 0, 0.03) 12px,
-                rgba(255, 255, 0, 0.03) 13px
-            );
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>가양 클럽 룩북 - 홈</title>
+  <meta name="description" content="가양 클럽을 처음 방문하거나 운영자를 위한 조건별 선택 기준과 이용 전 확인사항을 상세히 안내합니다. 지역마다 다른 흐름과 모임 지점에 따른 최적 옵션을 제시합니다.">
+  <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 클럽 선택 가이드, 가양 나이트 클럽, 클럽 이용 전 확인사항">
+  <link rel="canonical" href="https://gayang-club-tip.program-school.online/">
+  <meta property="og:title" content="가양 클럽 룩북 — 지역 특성에 맞는 선택 가이드">
+  <meta property="og:description" content="가양 클럽을 처음 방문하거나 운영자를 위한 조건별 선택 기준과 이용 전 확인사항을 상세히 안내합니다.">
+  <meta property="og:url" content="https://gayang-club-tip.program-school.online/">
+  <meta property="og:type" content="website">
+  <!-- CSS 파일은 기존 디자인 시스템을 그대로 사용 -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="responsive-768">
+  <!-- 네비게이션 (전체 페이지 공통) -->
+  <nav class="m-nav-e0rp nav-present">
+    <ul class="x-wrap-otvj">
+      <li><a href="/home">홈</a></li>
+      <li><a href="/intro">클럽 소개</a></li>
+      <li><a href="/location">위치 안내</a></li>
+      <li><a href="/guide">이용 가이드</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
+  </nav>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            가양<span>//</span>룩북
-        </div>
-        <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">☰</button>
-        <nav id="mainNav">
-            <a href="#hero">홈</a>
-            <a href="#lookbook">룩북</a>
-            <a href="#reviews">리뷰</a>
-            <a href="#contact">연락</a>
-        </nav>
-    </header>
+  <!-- 메인 콘텐츠 -->
+  <section class="m-main-t91m">
+    <h1 class="t-head-jbcb">가양 클럽 꿀팁, 첫 방문자를 위한 가이드</h1>
+    <p>가양은 서울 동쪽에 자리한 다채로운 나이트 라이프를 자랑하는 동네입니다. 특히 클럽 문화가 활발해 다양한 음악 장르와 분위기를 동시에 즐길 수 있죠. 이 페이지는 가양 지역에 처음 발을 들여놓는 분들을 위해 클럽 선택 시 고려해야 할 핵심 요소와 사전 체크리스트를 정리했습니다.</p>
+    <p>가양 클럽을 찾을 때 가장 먼저 살펴볼 것은 “운영 시간”과 “교통 접근성”입니다. 대중교통이 편리한 역세권 클럽은 늦은 시간에도 안전하게 이동할 수 있어 많은 방문객이 선호합니다. 또한, 주말과 평일에 따라 영업 시간이 변동될 수 있으니 공식 홈페이지나 SNS를 미리 확인하는 것이 좋습니다.</p>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero full-bleed" id="hero">
-            <div class="hero-content">
-                <h1>가양 클럽<br>룩북 터짐</h1>
-                <p>거리감성 100% · 클럽 패션 찐 모음 · 형들 스타일 미쳤다</p>
-                <a href="#lookbook" class="cta">🔥 룩북 보러가기 🔥</a>
-            </div>
-        </section>
-
-        <!-- INTRO / ABOUT -->
-        <section class="container section-gap" id="about">
-            <div class="asymmetric-grid">
-                <div class="brutal-border">
-                    <h2>와, 여기 다 모였네</h2>
-                    <p>가양 클럽씬에서 진짜 스타일을 원한다면? 내가 다 긁어모았어. 스트릿 브루탈리즘 그 자체, 과하지 않으면서도 쩌는 룩북. 직접 발로 뛰고 찍고, 클럽에서 본 찐 스타일만 엄선. 너도 여기서 영감 받고 클럽 가면 분위기 장악 가능 ㅋㅋ.</p>
-                    <p><strong class="text-accent">#가양클럽룩북 #스트릿패션 #클럽스타일</strong></p>
-                </div>
-                <div class="skew-box">
-                    <h3 class="text-secondary">오늘의 팁</h3>
-                    <p>클럽 갈 때 레이어드 필수야. 베이직 티 + 시크한 자켓 + 두꺼운 악세사리. 나는 개인적으로 <strong class="text-accent">초록+노랑</strong> 조합을 추천함. 야간 조명 아래서 완전 튄다.</p>
-                    <div style="margin-top: 16px;">💡 <span class="text-secondary">룩북 보기 전에 이 팁 기억해!</span></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- LOOKBOOK SECTION -->
-        <section class="container section-gap" id="lookbook">
-            <h2>
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h3>포스트 DNA f1dd3a5f관점: 현장에서 관찰한 작은 단서로 큰 차이를 설명구조: myth-counterexample — 통념과 반례를 교차 검증근거 방식: 잘못된 선택의 신호와 중단 기준을 포함도입: 일반적인 조언을 부정한 뒤 적용 조건을 설명문장 리듬:</h3>
+    <!-- 카드 섹션 -->
+    <div class="q-box-k1qu">
+      <div class="q-card-a68u">
+        <h2 class="t-head-jbcb">1️⃣ 인원 규모에 맞는 클럽 선택</h2>
+        <p>소규모 파티형 클럽은 친밀한 분위기에서 대화를 즐기기에 이상적이며, 20~30명 정도가 모이는 경우가 많습니다. 반면 대형 클럽은 EDM이나 힙합 파티가 중심이며, 200명 이상이 동시에 즐기는 대규모 이벤트가 자주 열립니다.</p>
+        <p>친구와 함께 라면 조용한 분위기에서 음악을 듣고 싶을지, 대규모 무대와 조명 쇼를 즐기고 싶을지를 먼저 정하고, 그에 맞는 인원 수를 수용할 수 있는 클럽을 고르는 것이 기본 원칙입니다.</p>
       </div>
-      <a href="posts/interview-001-xvkrwt.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+
+      <div class="q-card-a68u">
+        <h2 class="t-head-jbcb">2️⃣ 목적에 따른 분위기 구분</h2>
+        <p>클럽 방문 목적이 “네트워킹”이라면 비즈니스 라운지와 같은 별실이 마련된 곳을 찾는 것이 효율적입니다. 이런 공간은 조용한 배경음악과 함께 명함 교환이 자연스럽게 이뤄집니다.</p>
+        <p>반대로 “춤과 파티”를 즐기고 싶다면 리드 라인과 메인 무대가 강조된 클럽을 선택하세요. DJ가 직접 선곡하고, 조명 효과와 사운드 시스템이 최적화된 곳이 대부분이며, 이때는 사전 티켓 예매가 필요할 수 있습니다.</p>
       </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+
+      <div class="q-card-a68u">
+        <h2 class="t-head-jbcb">3️⃣ 안전 점검 체크리스트</h2>
+        <p>가양 클럽을 방문하기 전 반드시 확인해야 할 안전 항목은 다음과 같습니다. 첫째, 출입구 보안 시스템과 직원의 신분 확인 여부, 둘째, 내부 비상구 위치와 안내 표지판, 셋째, 무대 주변에 위험 요소(예: 과도한 음향 장비)가 없는지 여부입니다.</p>
+        <p>이러한 체크리스트는 방문 전 클럽 공식 홈페이지나 SNS에 게시된 ‘안전 가이드’를 통해 확인할 수 있습니다. 특히, 코로나19와 같은 전염병 상황에서는 방역 지침이 어떻게 적용되는지도 반드시 살펴보세요.</p>
       </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">가양 클럽 룩북에 관한 흔한 오해, 직접 확인해보니 달랐던 점</h4>
-        <h3>포스트 DNA d537f72c #### 제목: 창작한 제목: "NIKE SB Dunk Low Paris 2003년판 vs 2021년 레트로판, 스티치 밀도와 박스지 재질 비교" #### 이미지 태그 --- 아, 진짜... 나이키 SB Dunk Low Paris</h3>
-      </div>
-      <a href="posts/myth-002-1fntye3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-05">2026-06-05</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">글룸헤이븐 1판 vs 2판, 형님들만 아는 클래스 카드 &#39;디테일&#39; 짚어드림</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">크으, 글룸헤이븐 1판이랑 2판, 이거 은근히 신경 쓰이는 형님들 많지? 나도 처음엔 뭐 큰 차이 있겠어 했는데, 막상 파고들다 보니 자잘한 변경점이 꽤 있더라고. 특히 공식 FAQ에도 안 나오는 코너케이스 판정 같은 거, 이거 머리 아프잖아? 오늘은 그거랑 엮어서 클</p>
-      </div>
-      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
     </div>
-  </div>
-</section>
+
+    <!-- 추가 정보 섹션 -->
+    <div class="k-box-ad7b">
+      <h2 class="t-head-jbcb">가양 클럽 이용 전 꼭 알아야 할 팁</h2>
+      <p>첫 방문이라면 입장 전 드레스 코드를 확인하는 것이 중요합니다. 일부 클럽은 ‘스마트 캐주얼’ 혹은 ‘정장 착용’을 요구하기 때문에 사전에 복장을 준비하면 입장 거절을 방지할 수 있습니다.</p>
+      <p>또한, 가양에는 ‘프리 파티’와 ‘클로즈 파티’가 구분되는 경우가 많습니다. 프리 파티는 일반 입장객도 자유롭게 참여할 수 있지만, 클로즈 파티는 초대장 또는 멤버십이 필요하므로 사전에 초대 여부를 확인해야 합니다.</p>
+      <p>음악 장르별 특성을 파악해 두면 현장에서 더 즐거운 경험을 할 수 있습니다. 힙합 파티는 강렬한 비트와 랩 배틀이 중심이며, EDM 파티는 연속적인 비트와 라이트 쇼가 매력 포인트입니다. 자신이 선호하는 장르에 맞는 클럽을 고르면 만족도가 크게 올라갑니다.</p>
+      <p>마지막으로, 가양은 밤 시간대에 교통량이 급증하는 지역이므로 귀가 시각에 맞는 교통편을 미리 예약해 두는 것이 안전합니다. 택시 어플이나 대중교통 앱을 활용해 실시간 위치와 도착 시간을 체크해 보세요.</p>
+    </div>
+
+    <!-- FAQ -->
+    <section class="n-box-skia">
+      <h2 class="t-head-jbcb">FAQ – 가양 클럽 이용 시 자주 묻는 질문</h2>
+      <ul class="x-wrap-otvj">
+        <li><strong>Q: 가양 클럽은 어느 시간대에 가장 붐빕니까?</strong><br>
+        A: 주말 저녁 10시부터 새벽 2시 사이가 가장 혼잡합니다. 평일에는 11시부터 1시까지가 비교적 한산합니다.</li>
+        <li><strong>Q: 외부 음식·음료 반입이 가능한가요?</strong><br>
+        A: 대부분의 클럽은 외부 반입을 금지합니다. 현장에서 제공되는 바 음료와 안주를 이용하거나, 사전 예약제로 특별 메뉴를 주문할 수 있습니다.</li>
+        <li><strong>Q: 남성 전용 클럽과 여성 전용 클럽이 있나요?</strong><br>
+        A: 가양에는 특정 이벤트에 한해 성별 제한이 있는 클럽이 운영됩니다. 이벤트 페이지에서 ‘남성 전용’ 혹은 ‘여성 전용’ 표기가 있는지 확인하세요.</li>
+        <li><strong>Q: 클럽 내 흡연 구역은 어디인가요?</strong><br>
+        A: 모든 클럽은 실내 금연이 기본이며, 별도 흡연 구역이 마련된 경우는 입구 근처에 위치합니다. 시설 안내 표지판을 확인하시기 바랍니다.</li>
+      </ul>
+    </section>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="m-nav-e0rp">
+    <p>&copy; 2026 가양 클럽 룩북. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
